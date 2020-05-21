@@ -37,11 +37,11 @@ and then the \code{markdown} R package to generate HTML
 ## request a table of contents at the beginning of the output
 options(markdown.HTML.options=union('toc', getOption("markdown.HTML.options")))
 ## use the 'style.css' from this R package to format output HTML
-styles <- system.file("inst", "style.css", package="rmdreport")
+styles <- system.file("style.css", package="rmdreport")
 options(markdown.HTML.stylesheet=styles)
 ## generate markdown and HTML output files in the 'reports/' directory
 ## from toy example
-report <- system.file("inst", "example.rmd", package="rmdreport")
+report <- system.file("example.rmd", package="rmdreport")
 rmdreport.generate(report, file.path("reports", "report.html"))
 
 }
