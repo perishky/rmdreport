@@ -1,0 +1,18 @@
+# Example R Markdown file
+
+## Section 1: a plot
+
+```{r}
+x <- rnorm(100)
+y <- x + rnorm(length(x))
+plot(x,y,pch=19,main="scatterplot",xlab="x",ylab="y")
+```
+
+## Section 2: a table
+
+```{r}
+group <- sample(0:2,size=length(x),replace=T)
+stats <- aggregate(x,list(group=group),mean)
+colnames(stats) <- c("group","mean")
+kable(stats, row.names=F)
+```

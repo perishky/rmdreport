@@ -1,0 +1,14 @@
+Package: rmdreport
+Version: 1.0.0
+Title: Reports from R Markdown
+Description: Convenient generation of reports from RMarkdown
+Authors@R: c(person("Matthew", "Suderman", role = c("cre", "aut"),
+                    email = "matthewsuderman@hotmail.com"))
+Author: Matthew Suderman <matthewsuderman@hotmail.com> [cre, aut]
+Maintainer: Matthew Suderman <matthewsuderman@hotmail.com>
+Depends: knitr,
+	  markdown
+License: Artistic-2.0
+URL: https://github.com/perishky/rmdreport
+LazyData: yes
+RoxygenNote: 7.0.2
